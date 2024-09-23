@@ -17,4 +17,6 @@ func main() {
 		return
 	}
 	fmt.Printf("starting server on port %s\n", port)
+	server := netcat.NewServere(port)
+	server.Srart()
 }
